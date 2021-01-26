@@ -13,7 +13,7 @@ def baixar_dados():
 
 def baixar_dados_2():
     os.system('kaggle datasets download -d gpreda/covid-world-vaccination-progress')
-    return 'done'
+    return os.listdir()
 
 
 def extrair_dados():
