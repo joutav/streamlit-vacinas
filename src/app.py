@@ -1,9 +1,13 @@
 import streamlit as st
 import kaggle
+import subprocess
+
 
 def carrega_dados_kaggle():
-    kaggle.api.dataset_download_files('gpreda/covid-world-vaccination-progress', path='/', unzip=True)
-    return 'done'
+    bash_command = 'kaggle datasets download -d gpreda/covid-world-vaccination-progress'
+    process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    return output
 
 
 def main():
