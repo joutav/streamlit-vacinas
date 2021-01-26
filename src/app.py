@@ -11,8 +11,8 @@ def baixar_dados():
 
 
 def extrair_dados():
-    with zipfile.ZipFile('../covid-world-vaccination-progress.zip', 'r') as zip_ref:
-        zip_ref.extractall('../dados/')
+    with zipfile.ZipFile('./covid-world-vaccination-progress.zip', 'r') as zip_ref:
+        zip_ref.extractall('./dados/')
 
 
 def main():
