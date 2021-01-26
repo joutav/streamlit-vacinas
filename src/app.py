@@ -23,7 +23,7 @@ def extrair_dados():
 
 def main():
     st.text(baixar_dados_2())
-    extrair_dados()
+    # extrair_dados()
 
 
 if __name__ == '__main__':
