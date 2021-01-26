@@ -1,5 +1,4 @@
 import streamlit as st
-import kaggle
 import subprocess
 
 
