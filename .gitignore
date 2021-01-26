@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 /dados/country_vaccinations.csv
 /notebooks/covid-world-vaccination-progress.zip
+
+# Projeto
+/.idea/*
