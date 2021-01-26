@@ -10,9 +10,5 @@ def main():
     st.text(carrega_dados_kaggle())
 
 
-
-
-
-
 if __name__ == '__main__':
     main()
